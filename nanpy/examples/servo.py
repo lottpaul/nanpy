@@ -6,6 +6,9 @@
 
 from nanpy import Servo
 import time
+import logging
+
+logging.basicConfig(level=logging.DEBUG)
 
 servo = Servo(7)
 for move in [0, 90, 180, 90, 0]:
